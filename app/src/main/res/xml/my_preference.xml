@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!--
+        key: default color
+        title: screen-displayed title
+        summary: setting screen's instructions
+    -->
+    <Preference
+        android:key="DEFAULT_COLOR"
+        android:title="@string/default_color"
+        android:summary="@string/default_color_summary">
+
+        <!-- use the previous written class ColorActivity to link
+        and can choose the color fr the element -->
+        <intent
+            android:action="practice.oslo.com.notebookapp.CHOOSE_COLOR"
+            android:targetPackage="practice.oslo.com.notebookapp"
+            android:targetClass="practice.oslo.com.notebookapp.ColorActivity"
+            />
+
+    </Preference>
+
+    <!--
+        entries: array sources for setting screen display
+        entry value: array sources for storing option data
+        default value: the default numbers for options
+     -->
+    <ListPreference
+        android:key="NOTIFY_MINUTES"
+        android:title="@string/default_notify"
+        android:summary="@string/default_notify_period"
+        android:entries="@array/notify_minutes"
+        android:entryValues="@array/notify_value"
+        android:defaultValue="5"
+        />
+
+
+</PreferenceScreen>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- activity layout to play record -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="5sp"
+        android:padding="@dimen/default_padding"
+        android:background="@drawable/rectangle_drawable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/play_icon"
+            android:onClick="clickToPlay"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pause_icon"
+            android:onClick="clickPause"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stop_icon"
+            android:onClick="clickStop"
+            />
+
+        <SeekBar
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/control"
+            android:layout_marginTop="8sp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ok_to_add_item"
+        android:text="@android:string/ok"
+        android:onClick="onSubmit"
+        />
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <TableLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1"
+        tools:context="practice.oslo.com.notebookapp.ItemActivity">
+
+        <!-- table row for title tag and enter space-->
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/title"
+                android:background="@drawable/rectangle_drawable"
+                android:padding="5sp"
+                android:layout_margin="2sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <EditText
+                android:id="@+id/title_text"
+                android:hint="@string/enter_title"
+                android:background="@drawable/rectangle_drawable"
+                android:layout_margin="2sp"
+                android:padding="@dimen/default_padding"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+        </TableRow>
+
+        <!-- table row for content hint and entering contents -->
+
+        <TableRow>
+
+            <TextView
+                android:text="@string/content"
+                android:background="@drawable/rectangle_drawable"
+                android:layout_height="200sp"
+                android:layout_gravity="center_vertical"
+                android:padding="6sp"
+                android:layout_margin="@dimen/default_margin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+            <EditText
+                android:hint="@string/enter_content"
+                android:id="@+id/content_text"
+                android:layout_gravity="top"
+                android:layout_height="200sp"
+                android:padding="6sp"
+                android:layout_margin="@dimen/default_margin"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+        </TableRow>
+
+        <!-- imageView for displaying picture -->
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/rectangle_drawable"
+            android:padding="5sp"
+            android:layout_margin="2sp"
+            android:visibility="invisible"
+            />
+
+        <!-- tablelayout for different functions -->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*">
+            <TableRow>
+
+                <ImageButton
+                    android:id="@+id/take_picture"
+                    android:src="@drawable/ic_camera_alt_black_24dp"
+                    android:onClick="notebookFunction"
+                    />
+
+                <ImageButton
+                    android:id="@+id/microphone"
+                    android:src="@drawable/ic_mic_black_24dp"
+                    android:onClick="notebookFunction"
+                    />
+
+                <ImageButton
+                    android:id="@+id/set_location"
+                    android:src="@drawable/ic_location_on_black_24dp"
+                    android:onClick="notebookFunction"
+                    />
+
+                <ImageButton
+                    android:id="@+id/set_alarm_clock"
+                    android:src="@drawable/ic_alarm_add_black_24dp"
+                    android:onClick="notebookFunction"
+                    />
+
+                <ImageButton
+                    android:id="@+id/select_color"
+                    android:src="@drawable/ic_grade_black_24dp"
+                    android:onClick="notebookFunction"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- table layout for ok button and cancel button-->
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            >
+            <TableRow>
+
+                <Button
+                    android:id="@+id/cancel_button"
+                    android:text="@android:string/cancel"
+                    android:onClick="onSubmit"
+                    android:layout_margin="2sp"
+                    android:padding="5sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+
+                <Button
+                    android:id="@+id/ok_button"
+                    android:text="@android:string/ok"
+                    android:onClick="onSubmit"
+                    android:padding="5sp"
+                    android:layout_margin="2sp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+
+    </TableLayout>
+
+</ScrollView>

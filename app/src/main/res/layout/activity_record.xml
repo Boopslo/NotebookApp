@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/rectangle_drawable"
+        android:layout_margin="5sp"
+        android:padding="5sp"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/record_sound_icon"
+            android:id="@+id/record_button"
+            android:onClick="clickRecord"
+            />
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/record_volumn"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:max="15"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            />
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+
+            <Button
+
+                android:text="@android:string/cancel"
+                android:onClick="onSubmit"
+                />
+
+            <Button
+                android:text="@android:string/ok"
+                android:onClick="onSubmit"
+                android:id="@+id/record_confirm"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

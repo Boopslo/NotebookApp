@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">NoteBookApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="about">Android Practice new~</string>
+
+    <string name="title">Title</string>
+    <string name="enter_title">Enter a new Title</string>
+    <string name="content">Content</string>
+    <string name="enter_content">Enter some contents</string>
+
+
+    <string name="version">Android Version 4.0.3 SDK 18</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_item">ItemActivity</string>
+    <string name="title_activity_color">ColorActivity</string>
+
+    <string name="delete">Delete</string>
+    <string name="delete_item">You are sure to delete?</string>
+
+    <string name="default_color">Default Color</string>
+    <string name="default_color_summary">New add note default color</string>
+    <string name="default_notify">Default notification period</string>
+    <string name="default_notify_period">Notice before default period</string>
+
+    <string-array name="notify_minutes">
+        <item>five minutes</item>
+        <item>ten minutes</item>
+        <item>fifteen minutes</item>
+        <item>thirty minutes</item>
+        <item>sixty minutes</item>
+    </string-array>
+
+    <string-array name="notify_value">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+
+    <string name="title_record">Record Memo</string>
+    <string name="record_play">Play the record</string>
+    <string name="record_new">Record a new one</string>
+    <string name="record_play_title">Play record</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="title_update_location">Locating</string>
+    <string name="message_update_location">Update or clear location?</string>
+    <string name="update_location">Update location</string>
+    <string name="clear_location">Clear location</string>
+    <string name="title_current_location">Current location</string>
+    <string name="message_current_location">Save current location?</string>
+
+    <string name="google_play_service_missing">Google play not installed</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_maps2">Map</string>
+    <string name="title_activity_maps_new">Map</string>
+
+
+</resources>

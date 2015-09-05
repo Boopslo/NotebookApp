@@ -1,0 +1,68 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/search_item"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="SEARCH"
+        android:onClick="menuItems"
+        />
+
+    <item
+        android:id="@+id/add_item"
+        android:icon="@drawable/ic_add_box_black_24dp"
+        app:showAsAction="always"
+        android:title="ADD"
+        android:onClick="menuItems"
+        />
+
+    <item
+        android:id="@+id/delete_item"
+        android:title="DELETE"
+        android:icon="@drawable/ic_delete_black_24dp"
+        app:showAsAction="always"
+        android:onClick="menuItems"
+        />
+
+    <item
+        android:id="@+id/revert_item"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_assignment_return_black_24dp"
+        android:title="REVERT"
+        android:onClick="menuItems"
+        />
+
+    <item
+        android:id="@+id/share_item"
+        android:title="SHARE"
+        android:icon="@drawable/ic_cloud_black_24dp"
+        app:showAsAction="always"
+        android:onClick="menuItems">
+
+        <menu>
+            <item
+                android:id="@+id/share_google"
+                android:title="GOOGLE+"
+                android:onClick="menuItems"
+                />
+
+            <item
+                android:id="@+id/share_facebook"
+                android:title="FACEBOOK"
+                android:onClick="menuItems"
+                />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:title="Setting"
+        app:showAsAction="always"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:onClick="clickPreferences"
+        />
+
+</menu>
